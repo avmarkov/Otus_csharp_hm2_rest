@@ -24,6 +24,7 @@ using (var client = new HttpClient { BaseAddress = new Uri("http://localhost:507
     {
         await GetCustomerByIdFromServer(client, postres.Item2);
     }
+    else Console.WriteLine("Ошибка создания клиента!");
 }
 Console.ReadLine();
 
