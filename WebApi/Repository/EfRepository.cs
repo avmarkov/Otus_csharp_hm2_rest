@@ -21,15 +21,9 @@ namespace WebApi.Repository
         {
             T? entity = null;
 
-
-            entity = await datacontext.Set<T>().FirstOrDefaultAsync(x => x.Id == id);         
-
-
+            entity = await datacontext.Set<T>().FirstOrDefaultAsync(x => x.Id == id);
 
             return entity;
-
         }
-
-
     }
 }
